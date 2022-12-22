@@ -18,8 +18,8 @@ $ make
 
 will generate 
 
-1. `server.bin`: A binary that runs a webserver that hosts the test (from `server/server.go`)
-2. `web_client/main.wasm`: The wasm code for the client (from `client/client.go`)
+1. `server.bin`: A binary that runs a webserver that hosts the test (from [`server/server.go`](server/server.go))
+2. `web_client/main.wasm`: The wasm code for the client (from [`client/client.go`](client/client.go))
 3. `key.pem`, `cert.pem`: Self-signed key and certificate needed so that the testing server can do HTTPS
 
 ### Running
@@ -50,4 +50,4 @@ The client is *not* streaming their uploads.
 
 ## How
 
-See the comments through `client/client.go` and `server/server.go` for information on *how* the test does its work.
+See the comments through [`client/client.go`](client/client.go) and [`server/server.go`](server/server.go) for information on *how* the test does its work.
