@@ -24,13 +24,26 @@ will generate
 
 ### Running
 
+To start the server, execute
 ```
 $ ./server.bin
 ```
-
-Click on the link displayed to run the test.
-
 When you are finished, send `SIGINT` to the server process (Ctrl-C on Linux/macOS).
+
+#### Testing in a browser
+
+To test support in a web browser for streaming the body of POST requests, click on the link displayed by the server when it starts. 
+
+#### Testing in Deno
+
+To test Deno support for streaming the body of POST requests, execute
+
+```console
+$ deno run --unsafely-ignore-certificate-errors web_client/deno.js
+```
+
+from the root directory of this source code.
+
 
 ### Outcomes
 
